@@ -114,13 +114,16 @@
 // }
 
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "CommonJS",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "strict": true,
+   "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "rootDir": "src",
+    "outDir": "dist",
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"]
   }
 }
