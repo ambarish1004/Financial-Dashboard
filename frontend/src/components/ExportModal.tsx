@@ -23,7 +23,7 @@ const ExportModal = ({
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:5000/api/export-csv",
+        "https://financial-dashboard-w2d7.onrender.com/api/export-csv",
         { fields: selectedFields },
         {
           headers: {

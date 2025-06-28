@@ -21,7 +21,7 @@ const LoginPage = () => {
   const handleLogin = async () => {
     setError("");
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
+      const res = await axios.post("https://financial-dashboard-w2d7.onrender.com/api/auth/login", {
         email,
         password,
       });

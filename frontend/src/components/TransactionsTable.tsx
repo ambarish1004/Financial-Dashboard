@@ -19,7 +19,7 @@ const TransactionsTable = () => {
 
   const fetchTransactions = async () => {
     const token = localStorage.getItem("token");
-    const res = await axios.get("http://localhost:5000/api/transactions", {
+    const res = await axios.get("https://financial-dashboard-w2d7.onrender.com/api/transactions", {
       params: {
         page: page + 1,
         limit: rowsPerPage,

@@ -16,7 +16,7 @@ const RecentTransactions = () => {
   useEffect(() => {
     const fetchRecent = async () => {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/transactions/recent", {
+      const res = await axios.get("https://financial-dashboard-w2d7.onrender.com/api/transactions/recent", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTransactions(res.data);

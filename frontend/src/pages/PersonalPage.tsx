@@ -22,7 +22,7 @@ const PersonalPage = () => {
   try {
     if (name || email) {
       await axios.put(
-        "http://localhost:5000/api/user/update-profile",
+        "https://financial-dashboard-w2d7.onrender.com/api/user/update-profile",
         { name, email },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -30,7 +30,7 @@ const PersonalPage = () => {
 
     if (password) {
       await axios.put(
-        "http://localhost:5000/api/user/update-password",
+        "https://financial-dashboard-w2d7.onrender.com/api/user/update-password",
         { newPassword: password },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -49,7 +49,7 @@ const PersonalPage = () => {
   useEffect(() => {
   const fetchProfile = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/user/profile", {
+      const res = await axios.get("https://financial-dashboard-w2d7.onrender.com/api/user/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setName(res.data.name || "");

@@ -29,7 +29,7 @@ const SettingPage = () => {
   useEffect(() => {
     const fetchSettings = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/settings", {
+        const res = await axios.get("https://financial-dashboard-w2d7.onrender.com/api/user/settings", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const s = res.data;
@@ -50,7 +50,7 @@ const SettingPage = () => {
   const handleSave = async () => {
     try {
       await axios.put(
-        "http://localhost:5000/api/user/settings",
+        "https://financial-dashboard-w2d7.onrender.com/api/user/settings",
         {
           darkMode,
           emailNotif,

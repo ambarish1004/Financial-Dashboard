@@ -9,7 +9,7 @@ A full-stack financial management dashboard built with **React (TypeScript)**, *
 > Add your live links here after deployment
 
 - **Frontend**: [https://your-frontend.vercel.app](https://your-frontend.vercel.app)
-- **Backend API**: [https://your-backend.onrender.com](https://your-backend.onrender.com)
+- **Backend API**: https://financial-dashboard-w2d7.onrender.com
 
 ---
 
