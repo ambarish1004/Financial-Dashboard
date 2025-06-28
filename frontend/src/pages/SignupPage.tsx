@@ -30,7 +30,7 @@ const SignupPage = () => {
       });
       const { token } = res.data;
       login(token);
-      navigate("/");
+      navigate("https://financial-dashboard-w2d7.onrender.com/");
     } catch (err: any) {
       if (err.response?.status === 409) {
         setError("User already exists");

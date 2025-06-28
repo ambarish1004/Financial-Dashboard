@@ -29,7 +29,7 @@ const LoginPage = () => {
       const { token } = res.data;
       // localStorage.setItem("token", token);
       login(token);
-      navigate("/");
+      navigate("https://financial-dashboard-w2d7.onrender.com/");
     } catch (err) {
       setError("Invalid credentials or server error.");
     }
