@@ -29,7 +29,7 @@ const LoginPage = () => {
       const { token } = res.data;
       // localStorage.setItem("token", token);
       login(token);
-      navigate("https://financial-dashboard-lovat-ten.vercel.app/");
+      navigate("/");
     } catch (err) {
       setError("Invalid credentials or server error.");
     }

@@ -30,7 +30,7 @@ const SignupPage = () => {
       });
       const { token } = res.data;
       login(token);
-      navigate("https://financial-dashboard-lovat-ten.vercel.app/");
+      navigate("/");
     } catch (err: any) {
       if (err.response?.status === 409) {
         setError("User already exists");
